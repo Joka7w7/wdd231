@@ -1,45 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 - Term 4 2025</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 231 Course Home Page for Jose Chanax" />
+    <meta name="author" content="Jose Chanax" />
+    <title>WDD 231 - Web Frontend Development I - Jose Chanax</title>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to WDD231 - Term 4 2025</h1>
+        <div class="site-branding">
+            <img src="images/logo_1.svg" alt="Site Logo">
+            <span class="site-name">Site Name</span>
+        </div>
+        <button id="menu" aria-label="Menu Button">&#9776;</button>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Chamber Project</a>
+        <a href="#">Final Project</a>
     </nav>
 
     <main>
-        <section>
-            <h2>Course Overview</h2>
-            <p>This course covers advanced web development topics including responsive design, JavaScript frameworks,
-                and server-side programming.</p>
-        </section>
+        <h1>Home</h1>
 
-        <section>
-            <h2>Important Dates</h2>
-            <ul>
-                <li>Start Date: January 5, 2025</li>
-                <li>Midterm Exam: February 15, 2025</li>
-                <li>Final Project Due: March 30, 2025</li>
-            </ul>
-        </section>
+        <div class="main-top">
+            <section>
+                <h2>About Me</h2>
+                <p>Hello! I'm Jose Chanax, and I'm from Guatemala. I currently work as a Software Engineer at my work
+                    company. I'm married to a wonderful woman, and we’ve been together for over three years. I love
+                    spending
+                    time with her and constantly learning new things.</p>
+            </section>
 
-        <section>
-            <h2>Contact Information</h2>
-            <p>Email:
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/profile1.jpg" alt="Student Photo">
+            </section>
+        </div>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="buttons">
+                <button id="allBtn">All</button>
+                <button id="cseBtn">CSE</button>
+                <button id="wddBtn">WDD</button>
+            </div>
+            <div id="courseContainer"></div>
+            <p id="totalCredits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://linkedin.com/in/jose-chanax-" target="_blank"><img src="images/linkedin_1.svg"
+                    alt="LinkedIn"></a>
+            <a href="https://github.com/Joka7w7/wdd231" target="_blank"><img src="images/github_1.svg" alt="GitHub"></a>
+            <a href="https://x.com" target="_blank"><img src="images/x_1.svg" alt="X"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook_1.svg" alt="Facebook"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> • Jose Chanax • Quetzaltenango, Guatemala</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
 
 </html>
