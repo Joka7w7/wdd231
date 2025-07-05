@@ -4,14 +4,6 @@
         margin: 0 auto;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #333;
-        color: white;
-    }
-
     .navigation {
         display: flex !important;
         flex-direction: row;
@@ -37,10 +29,6 @@
 
     .main-top section {
         flex: 1;
-    }
-
-    .courses {
-        grid-column: 1 / -1;
     }
 
     #courseContainer {
