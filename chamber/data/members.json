@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Timbuktu Textiles",
+            "tagline": "Tradition in every thread",
+            "email": "info@textiles.com",
+            "phone": "800-555-1001",
+            "website": "https://textiles.com",
+            "image": "textiles.png",
+            "membership": 1
+        },
+        {
+            "name": "Sahara Café",
+            "tagline": "Taste the desert",
+            "email": "contact@saharacafe.com",
+            "phone": "800-555-1002",
+            "website": "https://saharacafe.com",
+            "image": "saharacafe.png",
+            "membership": 3
+        },
+        {
+            "name": "Nomad Gear Co.",
+            "tagline": "Explore. Live. Repeat.",
+            "email": "support@nomadgear.com",
+            "phone": "800-555-1003",
+            "website": "https://nomadgear.com",
+            "image": "nomadgear.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Tuareg Tours",
+            "tagline": "Adventure through the sands",
+            "email": "bookings@tuaregtours.com",
+            "phone": "800-555-1004",
+            "website": "https://tuaregtours.com",
+            "image": "tuaregtours.png",
+            "membership": 3
+        },
+        {
+            "name": "CamelTech Solutions",
+            "tagline": "Digital tools for traditional needs",
+            "email": "hello@cameltech.com",
+            "phone": "800-555-1005",
+            "website": "https://cameltech.com",
+            "image": "cameltech.png",
+            "membership": 2
+        },
+        {
+            "name": "Dune Artisans",
+            "tagline": "Crafted with heart from the desert",
+            "email": "contact@duneartisans.com",
+            "phone": "800-555-1006",
+            "website": "https://duneartisans.com",
+            "image": "duneartisans.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Oasis Wellness Spa",
+            "tagline": "Relaxation in every drop",
+            "email": "relax@oasiswellness.com",
+            "phone": "800-555-1007",
+            "website": "https://oasiswellness.com",
+            "image": "oasis.jpg",
+            "membership": 3
+        }
+    ]
+}

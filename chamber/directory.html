@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of Chamber of Commerce members.">
+    <meta name="author" content="Jose Chanax">
+    <title>WDD 231 - Chamber of Commerce Directory - Jose Chanax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Guatemala Chamber of Commerce">
+    <meta property="og:description" content="Connect with businesses in Guatemala.">
+    <meta property="og:image" content="images/social-share.png">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/chamber/directory.html">
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>Guatemala Chamber of Commerce</h1>
+        </div>
+        <button id="menu">&#9776;</button> <!-- hamburger icon -->
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero">
+        <img src="images/banner.avif" alt="Hero image" class="hero-img">
+        <button class="keynote-btn">Keynote Tickets</button>
+    </section>
+
+    <main>
+        <h2>Home</h2>
+
+        <!-- Event, Weather, Forecast Section -->
+        <div class="main-top">
+            <section>
+                <h3 class="card-title">Events</h3>
+                <p>Upcoming events will be displayed here.</p>
+            </section>
+            <section>
+                <h3 class="card-title">Current Weather</h3>
+                <img id="weather-icon" src="images/cloudy.jpg" alt="Current Weather">
+                <p>75°F, Partly Cloudy</p>
+            </section>
+            <section>
+                <h3 class="card-title">Weather Forecast</h3>
+                <p>Today: 90°F<br>Wed: 89°F<br>Thu: 68°F</p>
+            </section>
+        </div>
+
+        <h2>Business Directory</h2>
+        <div class="view-buttons">
+            <button id="gridView">🔳 Grid</button>
+            <button id="listView">📃 List</button>
+        </div>
+        <section id="directory" class="grid"></section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>Guatemala Chamber of Commerce</strong><br>
+                    10 Rue De La Paix<br>
+                    Guatemala City, GT 01010<br>
+                    info@guatemalacc.org<br>
+                    (502) 555-2300</p>
+            </div>
+
+            <div class="footer-section social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-section credits">
+                <p>WDD231 Class Project<br>
+                    Jose Chanax<br>
+                    © <span id="year"></span> Guatemala Chamber of Commerce<br>
+                    Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

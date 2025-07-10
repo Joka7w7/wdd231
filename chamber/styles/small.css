@@ -1,0 +1,402 @@
+/* GLOBAL BASE */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0.25rem 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+header .logo {
+  height: 50px;
+  width: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* NAVIGATION */
+.navigation {
+  display: none;
+  flex-direction: column;
+  background-color: #444;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.navigation a {
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav ul.navigation {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.navigation li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.navigation.show {
+  display: flex;
+}
+
+#menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  display: block;
+  cursor: pointer;
+}
+
+/* HERO IMAGE */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.keynote-btn {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* INFO SECTION BELOW HERO (events/weather) */
+.main-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.main-top section {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+main h2 {
+  padding: 0 1rem;
+}
+
+.card-title {
+  background-color: #444;
+  color: white;
+  margin: -1rem -1rem 1rem -1rem;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* VIEW TOGGLE BUTTONS */
+.view-buttons {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* GRID DIRECTORY */
+#directory.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#directory.grid .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+#directory.grid .card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+#directory.grid .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 250px;
+}
+
+#directory.grid .card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* LIST DIRECTORY */
+#directory.list {
+  padding: 1rem;
+}
+
+#directory.list .card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  text-align: left;
+}
+
+#directory.list .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#directory.list .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#directory.list .card-top h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#directory.list .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+#directory.list .card-link {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+#directory.list .desc {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+#directory.list .contact {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-section img {
+  width: 30px;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* RESPONSIVE STYLES */
+@media (min-width: 768px) {
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #333;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .navigation a {
+    padding: 1rem;
+    border: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .main-top {
+    flex-direction: row;
+  }
+
+  .main-top section {
+    flex: 1;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-section {
+    flex: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  #directory.list .card {
+    display: grid;
+    grid-template-columns: 100px 2fr 2fr 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  #directory.list .card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  #directory.list .card .column:nth-child(2) {
+    align-self: flex-start;
+  }
+
+  #directory.list .card .column:nth-child(3),
+  #directory.list .card .column:nth-child(4) {
+    align-self: center;
+  }
+
+  #directory.list .card a {
+    word-break: break-word;
+    font-weight: bold;
+    color: #0077cc;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #directory.list .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #directory.list .card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    align-self: center;
+  }
+
+  #directory.list .column {
+    width: 100%;
+  }
+
+  #directory.list .column h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  #directory.list .column p,
+  #directory.list .column a {
+    margin: 0.1rem 0;
+    font-size: 0.95rem;
+    word-break: break-word;
+  }
+
+  #directory.list .column a {
+    font-weight: bold;
+    color: #0077cc;
+    text-decoration: none;
+  }
+}
