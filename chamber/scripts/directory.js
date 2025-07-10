@@ -81,3 +81,5 @@ document.getElementById("menu").addEventListener("click", () => {
     document.querySelector(".navigation").classList.toggle("show");
 });
 
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
