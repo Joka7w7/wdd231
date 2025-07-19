@@ -4,26 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory of Chamber of Commerce members.">
+    <meta name="description" content="Home page of the Guatemala Chamber of Commerce.">
     <meta name="author" content="Jose Chanax">
-    <title>WDD 231 - Chamber of Commerce Directory - Jose Chanax</title>
+    <title>WDD 231 - Chamber of Commerce Home - Jose Chanax</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Guatemala Chamber of Commerce">
-    <meta property="og:description" content="Connect with businesses in Guatemala.">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Support and connect with local Guatemalan businesses.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/chamber/index.html">
 </head>
 
 <body>
@@ -43,9 +42,8 @@
         </nav>
     </header>
 
-    <!-- Hero / Banner Section -->
     <section class="hero">
-        <h2>Directory</h2>
+        <h2>Home</h2>
         <img src="images/banner.avif" alt="Hero image" class="hero-img">
         <button class="keynote-btn" onclick="window.location.href='Join.html'">Join the chamber of commerce</button>
     </section>
@@ -53,8 +51,11 @@
     <main>
         <div class="main-top">
             <section>
-                <h3 class="card-title">Events</h3>
-                <p>Upcoming events will be displayed here.</p>
+                <h3 class="card-title">Upcoming Events</h3>
+                <ul>
+                    <li><strong>July 22:</strong> Networking Breakfast</li>
+                    <li><strong>July 26:</strong> Summer Gala</li>
+                </ul>
             </section>
             <section>
                 <h3 class="card-title">Current Weather</h3>
@@ -67,14 +68,12 @@
                 </div>
             </section>
         </div>
-
-        <h2>Business Directory</h2>
-        <div class="view-buttons">
-            <button id="gridView">🔳 Grid</button>
-            <button id="listView">📃 List</button>
-        </div>
-        <div id="directory" class="grid"></div>
     </main>
+
+    <section class="spotlights">
+        <h2 style="padding-left: 1rem;">Business Spotlights</h2>
+        <div id="spotlight-container" class="grid" style="padding: 1rem;"></div>
+    </section>
 
     <footer>
         <div class="footer-container">
@@ -85,13 +84,11 @@
                     info@guatemalacc.org<br>
                     (502) 555-2300</p>
             </div>
-
             <div class="footer-section social">
                 <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
                 <a href="#"><img src="images/x.svg" alt="Twitter"></a>
                 <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
             </div>
-
             <div class="footer-section credits">
                 <p>WDD231 Class Project<br>
                     Jose Chanax<br>
