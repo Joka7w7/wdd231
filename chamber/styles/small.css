@@ -428,3 +428,257 @@ footer {
     text-decoration: none;
   }
 }
+
+/* Form Section Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-section form {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.15);
+}
+
+button[type="submit"] {
+  padding: 0.75rem;
+  background-color: #0077cc;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive Join Container */
+.join-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .join-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-section,
+  .benefits {
+    flex: 1;
+  }
+
+  .benefits {
+    margin-left: 2rem;
+  }
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards with Entrance Animation */
+.card {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card a {
+  color: #0077cc;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Color themes */
+.np {
+  background-color: #e6f7ff;
+}
+
+.bronze {
+  background-color: #f8e2c4;
+}
+
+.silver {
+  background-color: #e6e6e6;
+}
+
+.gold {
+  background-color: #fff5b1;
+}
+
+/* MODAL STYLES */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.close-button {
+  float: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card:nth-child(1) {
+  border-left: 8px solid #c2cdd4;
+  /* Blue - Non */
+}
+
+.card:nth-child(2) {
+  border-left: 8px solid #28a745;
+  /* Green - Bronce */
+}
+
+.card:nth-child(3) {
+  border-left: 8px solid #f39c12;
+  /* Orange - Silver */
+}
+
+.card:nth-child(4) {
+  border-left: 8px solid #9b59b6;
+  /* Purple - Gold */
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hover and focus */
+.card:focus-within,
+.card:hover {
+  border-color: #0077cc;
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ensure tabbing works */
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.thankyou-page {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Roboto', sans-serif;
+}
+
+.thankyou-page h1 {
+  color: #0077cc;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thankyou-page p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.thankyou-info p {
+  margin: 0.75rem 0;
+}
+
+.thankyou-info strong {
+  display: inline-block;
+  width: 160px;
+  font-weight: 600;
+  color: #444;
+}

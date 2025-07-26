@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Guatemala Chamber of Commerce.">
+    <meta name="author" content="Jose Chanax">
+    <title>WDD 231 - Chamber Join Page - Jose Chanax</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Join the Guatemala Chamber of Commerce">
+    <meta property="og:description" content="Become a member of our business community.">
+    <meta property="og:image" content="https://joka7w7.github.io/wdd231/chamber/logo.png">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/chamber/join.html">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Join</h1>
+
+    <main class="join-page">
+        <div class="join-container">
+            <section class="form-section">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="get">
+                    <label>
+                        First Name:
+                        <input type="text" name="fname" required autocomplete="given-name">
+                    </label>
+
+                    <label>
+                        Last Name:
+                        <input type="text" name="lname" required autocomplete="family-name">
+                    </label>
+
+                    <label>
+                        Email:
+                        <input type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+                    </label>
+
+                    <label>
+                        Phone Number:
+                        <input type="tel" name="phone" required autocomplete="tel">
+                    </label>
+
+                    <label>
+                        Business Name:
+                        <input type="text" name="business" required autocomplete="organization">
+                    </label>
+
+                    <label>
+                        Title/Position:
+                        <input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"
+                            title="Only letters, spaces, and hyphens, min 7 characters">
+                    </label>
+
+                    <label>
+                        Membership Level:
+                        <select name="membership" required>
+                            <option value="" disabled selected>Select level</option>
+                            <option value="NP">NP Membership (Free)</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business Description:
+                        <textarea name="description" rows="4" title="Describe your business"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <aside class="benefits">
+                <h2>Membership Levels</h2>
+                <div class="cards">
+                    <div class="card np">
+                        <h3>Non-Profit Membership Level</h3>
+                        <a href="#" class="open-modal" data-modal="modal-np">Learn more</a>
+                    </div>
+
+                    <div class="card bronze">
+                        <h3>Bronze Membership Level</h3>
+                        <a href="#" class="open-modal" data-modal="modal-bronze">Learn more</a>
+                    </div>
+
+                    <div class="card silver">
+                        <h3>Silver Membership Level</h3>
+                        <a href="#" class="open-modal" data-modal="modal-silver">Learn more</a>
+                    </div>
+
+                    <div class="card gold">
+                        <h3>Gold Membership Level</h3>
+                        <a href="#" class="open-modal" data-modal="modal-gold">Learn more</a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- ✅ MODALS -->
+            <div id="modal-np" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3>NP (Non-Profit) Membership Benefits</h3>
+                    <p><strong>Price:</strong> Free</p>
+                    <ul>
+                        <li><strong>Free Membership</strong> – Ideal for registered non-profit organizations.</li>
+                        <li><strong>Monthly Webinars</strong> – Join expert-led sessions on nonprofit growth and
+                            community outreach.</li>
+                        <li><strong>Basic Support</strong> – Email support and community forum access.</li>
+                        <li><strong>Access to Resources</strong> – Free tools and templates for nonprofit operations.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="modal-bronze" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Bronze Membership Benefits</h3>
+                    <p><strong>Price:</strong> $50 / year</p>
+                    <ul>
+                        <li><strong>Directory Listing</strong> – Be listed on our official member directory.</li>
+                        <li><strong>Monthly Newsletter</strong> – Stay informed with news, trends, and community
+                            updates.</li>
+                        <li><strong>Community Board Access</strong> – Post and respond to member messages.</li>
+                        <li><strong>Exclusive Event Invites</strong> – Attend special networking mixers and online
+                            meetups.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="modal-silver" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Silver Membership Benefits</h3>
+                    <p><strong>Price:</strong> $100 / year</p>
+                    <ul>
+                        <li><strong>Event Discounts</strong> – Reduced pricing on all official events and workshops.
+                        </li>
+                        <li><strong>Featured Posts</strong> – Spotlight your business in our email newsletter and blog.
+                        </li>
+                        <li><strong>Quarterly Reports</strong> – Access to exclusive market trend and industry data
+                            reports.</li>
+                        <li><strong>Priority Listings</strong> – Appear higher in the member directory.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="modal-gold" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Gold Membership Benefits</h3>
+                    <p><strong>Price:</strong> $150 / year</p>
+                    <ul>
+                        <li><strong>All Silver Benefits</strong> – Includes all perks from the Silver level.</li>
+                        <li><strong>Premium Homepage Placement</strong> – Highlighted visibility on our homepage.</li>
+                        <li><strong>Priority Customer Service</strong> – Fast-track phone and chat support.</li>
+                        <li><strong>Custom Training Sessions</strong> – Schedule private business growth or marketing
+                            workshops.</li>
+                        <li><strong>Sponsorship Opportunities</strong> – Be featured in our major events and programs.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>Guatemala Chamber of Commerce</strong><br>
+                    10 Rue De La Paix<br>
+                    Guatemala City, GT 01010<br>
+                    info@guatemalacc.org<br>
+                    (502) 555-2300</p>
+            </div>
+
+            <div class="footer-section social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-section credits">
+                <p>WDD231 Class Project<br>
+                    Jose Chanax<br>
+                    © <span id="year"></span> Guatemala Chamber of Commerce<br>
+                    Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

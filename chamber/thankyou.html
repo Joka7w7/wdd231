@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory of Chamber of Commerce members.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thank you for joining the Guatemala Chamber of Commerce.">
     <meta name="author" content="Jose Chanax">
-    <title>WDD 231 - Chamber of Commerce Directory - Jose Chanax</title>
+    <title>Thank You – Guatemala Chamber of Commerce</title>
+
+    <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,20 +18,48 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
 
-    <script src="scripts/directory.js" defer></script>
-
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Guatemala Chamber of Commerce">
     <meta property="og:description" content="Connect with businesses in Guatemala.">
     <meta property="og:image" content="https://joka7w7.github.io/wdd231/chamber/logo.png">
-    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/chamber/thankyou.html">
+
+    <script defer>
+        // Inject current year and last modified
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = document.lastModified;
+
+            // Populate form data from query string
+            const params = new URLSearchParams(window.location.search);
+            const fields = {
+                fname: 'First Name',
+                lname: 'Last Name',
+                email: 'Email',
+                phone: 'Phone Number',
+                business: 'Business Name',
+                timestamp: 'Submitted On'
+            };
+
+            const container = document.getElementById('submitted-data');
+
+            Object.entries(fields).forEach(([key, label]) => {
+                const value = params.get(key);
+                if (value) {
+                    const p = document.createElement('p');
+                    p.innerHTML = `<strong>${label}:</strong> ${decodeURIComponent(value)}`;
+                    container.appendChild(p);
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
     <header>
         <div class="branding">
-            <img src="images/logo.png" alt="Logo" class="logo">
+            <img src="images/logo.png" alt="Chamber Logo" class="logo">
         </div>
         <button id="menu">&#9776;</button>
         <nav>
@@ -42,37 +72,19 @@
         </nav>
     </header>
 
-    <!-- Hero / Banner Section -->
+    <!-- Hero Image -->
     <section class="hero">
-        <img src="images/banner.avif" alt="Hero image" class="hero-img">
-        <button class="keynote-btn" onclick="window.location.href='Join.html'">Join the chamber of commerce</button>
+        <img src="images/banner.avif" alt="Hero banner" class="hero-img">
+        <button class="keynote-btn" onclick="window.location.href='join.html'">Back to Join Page</button>
     </section>
 
-    <main>
-        <h1>Chamber of Commerce - Directory</h1>
-        <div class="main-top">
-            <section>
-                <h3 class="card-title">Events</h3>
-                <p>Upcoming events will be displayed here.</p>
-            </section>
-            <section>
-                <h3 class="card-title">Current Weather</h3>
-                <div id="weather-current">
-                </div>
-            </section>
-            <section>
-                <h3 class="card-title">3-Day Forecast</h3>
-                <div id="weather-forecast">
-                </div>
-            </section>
-        </div>
+    <main class="thankyou-page">
+        <h1>🎉 Thank You for Joining!</h1>
+        <p>We have received your submission. Below is a summary of the information you provided:</p>
 
-        <h2>Business Directory</h2>
-        <div class="view-buttons">
-            <button id="gridView">🔳 Grid</button>
-            <button id="listView">📃 List</button>
-        </div>
-        <div id="directory" class="grid"></div>
+        <section class="thankyou-info" id="submitted-data">
+            <!-- Form data will be displayed here -->
+        </section>
     </main>
 
     <footer>
