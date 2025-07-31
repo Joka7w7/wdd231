@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Tikal National Park",
+        "image": "images/tikal.webp",
+        "address": "Petén, Guatemala",
+        "description": "Explore ancient Mayan temples and pyramids in the heart of the jungle at this UNESCO World Heritage Site."
+    },
+    {
+        "title": "Lake Atitlán",
+        "image": "images/atitlan.webp",
+        "address": "Sololá, Guatemala",
+        "description": "A breathtaking volcanic lake surrounded by traditional Mayan villages, perfect for boating, hiking, and cultural experiences."
+    },
+    {
+        "title": "Antigua Guatemala",
+        "image": "images/antigua.webp",
+        "address": "Sacatepéquez, Guatemala",
+        "description": "A charming colonial city with cobblestone streets, historic ruins, and colorful architecture."
+    },
+    {
+        "title": "Pacaya Volcano",
+        "image": "images/pacaya.webp",
+        "address": "Escuintla, Guatemala",
+        "description": "Hike an active volcano and witness stunning lava flows and panoramic views."
+    },
+    {
+        "title": "Chichicastenango Market",
+        "image": "images/chichi-market.webp",
+        "address": "Chichicastenango, El Quiché",
+        "description": "One of the largest and most vibrant outdoor markets in Central America, offering textiles, crafts, and local food."
+    },
+    {
+        "title": "Semuc Champey",
+        "image": "images/semuc.webp",
+        "address": "Alta Verapaz, Guatemala",
+        "description": "Natural limestone pools with turquoise waters, hidden deep in the jungle — a paradise for adventurers."
+    },
+    {
+        "title": "Cerro de la Cruz",
+        "image": "images/cerro-cruz.webp",
+        "address": "Antigua Guatemala",
+        "description": "A popular viewpoint overlooking the city of Antigua and the surrounding volcanoes."
+    },
+    {
+        "title": "Ixchel Museum of Indigenous Textiles",
+        "image": "images/ixchel.webp",
+        "address": "Guatemala City, Zone 10",
+        "description": "Dedicated to preserving the traditional dress and textiles of Guatemala’s indigenous communities."
+    }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover Guatemala - Chamber of Commerce">
+    <meta name="author" content="Jose Chanax" />
+    <title>Discover | Guatemala Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+
+    <script src="scripts/discover.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-grid">
+        <aside class="sidebar">
+            <div id="visit-message"></div>
+        </aside>
+
+        <section class="card-grid" id="discover-cards">
+            <!-- Cards will be populated by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>Guatemala Chamber of Commerce</strong><br>
+                    10 Rue De La Paix<br>
+                    Guatemala City, GT 01010<br>
+                    info@guatemalacc.org<br>
+                    (502) 555-2300</p>
+            </div>
+
+            <div class="footer-section social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-section credits">
+                <p>WDD231 Class Project<br>
+                    Jose Chanax<br>
+                    © <span id="year"></span> Guatemala Chamber of Commerce<br>
+                    Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
