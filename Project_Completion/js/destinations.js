@@ -1,10 +1,4 @@
 // js/destinations.js
-
-// Toggle mobile menu
-const menuButton = document.getElementById('menu');
-const nav = document.querySelector('nav ul.navigation');
-menuButton.addEventListener('click', () => nav.classList.toggle('show'));
-
 // Inject footer dates
 document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('year');
@@ -51,3 +45,7 @@ async function loadDestinations() {
 
 // Wait for DOM loaded to start loading data
 window.addEventListener('DOMContentLoaded', loadDestinations);
+
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.querySelector('.navigation').classList.toggle('show');
+});

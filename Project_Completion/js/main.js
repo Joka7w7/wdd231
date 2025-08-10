@@ -49,12 +49,12 @@ function renderFeatured(destinations) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.querySelector("nav ul");
-
-    menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
-    });
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.querySelector('.navigation').classList.toggle('show');
 });
+
+
+
+
+
 

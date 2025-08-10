@@ -222,10 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('lastModified').textContent = document.lastModified;
 });
 
-const menuButton = document.getElementById('menu');
-const navigation = document.querySelector('.navigation');
-
-menuButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    menuButton.classList.toggle('open');
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.querySelector('.navigation').classList.toggle('show');
 });

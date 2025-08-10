@@ -5,6 +5,7 @@ body {
     background-color: #f9f9f9;
     color: #222;
     max-width: 1200px;
+    margin: auto;
 }
 
 /* Links */
@@ -53,11 +54,6 @@ header {
 .navigation a.active,
 .navigation a:hover {
     color: #0B8FCE;
-}
-
-/* Hamburger button hidden by default on large view */
-#menu {
-    display: none;
 }
 
 /* === Hero Section === */
