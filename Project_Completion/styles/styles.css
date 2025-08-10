@@ -1,0 +1,131 @@
+@media (max-width: 768px) {
+
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #333;
+  }
+
+  .navigation a {
+    padding: 1rem;
+    border: none;
+  }
+
+
+  /* Show menu when toggled */
+  .navigation.show {
+    display: flex;
+  }
+
+  /* Show hamburger button */
+  #menu {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #2C5F2D;
+    width: 100%;
+    display: none;
+  }
+
+  /* Hero text & button adjustments */
+  .hero {
+    position: relative;
+    height: auto;
+    background: url('../images/hero.webp') center/cover no-repeat;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-text {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .keynote-btn {
+    position: relative;
+    margin: 1rem auto 0 auto;
+    display: block;
+    z-index: 2;
+  }
+
+  /* Footer stacked layout */
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    flex: unset;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+  }
+
+  #trip-info-wrapper {
+    flex-direction: column;
+  }
+}
+
+
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Small view styling */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    /* hide menu by default on small screens */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul.show {
+    display: flex;
+    /* show menu when toggled */
+  }
+}

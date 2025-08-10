@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Guatemala Explorer">
+    <meta name="author" content="Jose Chanax">
+    <title>WDD 231 - Guatemala Explorer - Contact - Jose Chanax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Guatemala Explorer">
+    <meta property="og:description" content="Discover the beauty and culture of Guatemala with our travel guide.">
+    <meta property="og:image" content="https://Joka7w7.github.io/wdd231/Project_Completion/images/logo.png">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/Project_Completion/trip-planner.html">
+    <script src="js/trip-planner.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Guatemala Explorer Logo" class="logo">
+        </div>
+        <button id="menu" aria-label="Menu Button">&#9776;</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="trip-planner.html" class="active">Trip Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.webp" alt="Contact Us" class="hero-img">
+        <button class="keynote-btn" onclick="window.location.href='trip-planner.html'">Plan Your Trip</button>
+        <div class="hero-text">
+            <h1>Plan Your Trip</h1>
+            <p>We’d love to hear from you. Send us a message and we’ll get back to you soon.</p>
+        </div>
+    </section>
+
+    <main class="trip-planner-page">
+        <section id="destinations-select" class="trip-planner-page">
+            <h2>Select Destination</h2>
+            <select id="destination-select" aria-label="Select a destination">
+                <option value="">-- Select a destination --</option>
+            </select>
+
+            <div class="trip-form">
+                <label>From: <input type="date" id="trip-date-from"></label>
+                <label>To: <input type="date" id="trip-date-to"></label>
+                <button id="save-plan">Save Trip Plan</button>
+            </div>
+
+            <h3>Saved Trips</h3>
+            <div id="saved-trips-list"></div>
+            <button id="clear-trips">Clear All Trips</button>
+        </section>
+
+        <section id="destination-details" hidden>
+            <h3 id="dest-name">Please select a destination</h3>
+            <img id="dest-image" src="planceholder.jpg" alt=""
+                style="max-width: 300px; display: block; margin-bottom: 1rem;">
+            <p id="dest-description"></p>
+            <p><strong>Location:</strong> <span id="dest-location"></span></p>
+            <p><strong>Best Time to Visit:</strong> <span id="dest-best-time"></span></p>
+            <p><strong>Difficulty:</strong> <span id="dest-difficulty"></span></p>
+            <p><strong>Tags:</strong> <span id="dest-tags"></span></p>
+        </section>
+
+        <section id="weather-info">
+            <h2>Weather for Selected Destination</h2>
+            <div id="weather-display">Select a destination to see weather info.</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p>
+                    <strong>Guatemala Explorer</strong><br>
+                    Guatemala City, Guatemala<br>
+                    info@guatemalaexplorer.com<br>
+                    (502) 555-2300
+                </p>
+            </div>
+            <div class="footer-section social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-section credits">
+                <p>
+                    WDD231 Final Project<br>
+                    Jose Chanax<br>
+                    © <span id="year"></span> Guatemala Explorer<br>
+                    Last Modified: <span id="lastModified"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Guatemala Explorer">
+    <meta name="author" content="Jose Chanax">
+    <title>WDD 231 - Guatemala Explorer - Jose Chanax</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Scripts -->
+    <script src="js/destinations.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Guatemala Explorer">
+    <meta property="og:description" content="Discover the beauty and culture of Guatemala with our travel guide.">
+    <meta property="og:image" content="https://Joka7w7.github.io/wdd231/Project_Completion/images/logo.png">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/Project_Completion/destinations.html">
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Guatemala Explorer Logo" class="logo">
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="trip-planner.html">Trip Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.webp" alt="Beautiful view of Lake Atitlán, Guatemala" class="hero-img">
+        <button class="keynote-btn" onclick="window.location.href='trip-planner.html'">Plan Your Trip</button>
+        <div class="hero-text">
+            <h1>Explore Guatemala's Top Destinations</h1>
+            <p>Discover breathtaking places, rich culture, and hidden gems across the country.</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="destinations-list" class="destinations-list grid">
+            <!-- Destination cards will be injected here -->
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>Guatemala Explorer</strong><br>
+                    Guatemala City, Guatemala<br>
+                    info@guatemalaexplorer.com<br>
+                    (502) 555-2300</p>
+            </div>
+            <div class="footer-section social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-section credits">
+                <p>WDD231 Final Project<br>
+                    Jose Chanax<br>
+                    © <span id="year"></span> Guatemala Explorer<br>
+                    Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Guatemala Explorer - Discover the best destinations, culture, and travel tips for Guatemala.">
+    <meta name="author" content="Jose Chanax">
+    <title>WDD 231 - Guatemala Explorer - Jose Chanax</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Scripts -->
+    <script defer>
+        // Inject current year and last modified
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = document.lastModified;
+
+            const params = new URLSearchParams(window.location.search);
+            const fields = {
+                name: 'Name',
+                email: 'Email',
+                phone: 'Phone Number',
+                timestamp: 'Submitted On'
+            };
+
+            const container = document.getElementById('submitted-data');
+
+            Object.entries(fields).forEach(([key, label]) => {
+                const value = params.get(key);
+                if (value) {
+                    const p = document.createElement('p');
+                    p.innerHTML = `<strong>${label}:</strong> ${decodeURIComponent(value)}`;
+                    container.appendChild(p);
+                }
+            });
+        });
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Guatemala Explorer">
+    <meta property="og:description" content="Discover the beauty and culture of Guatemala with our travel guide.">
+    <meta property="og:image" content="https://Joka7w7.github.io/wdd231/Project_Completion/images/logo.png">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/Project_Completion/thankyou.html">
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Guatemala Explorer Logo" class="logo">
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="trip-planner.html">Trip Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.webp" alt="Beautiful view of Lake Atitlán, Guatemala" class="hero-img">
+        <button class="keynote-btn" onclick="window.location.href='trip-planner.html'">Plan Your Trip</button>
+        <div class="hero-text">
+            <h1>Get in Touch</h1>
+            <p>We’d love to hear from you. Send us a message and we’ll get back to you soon.</p>
+        </div>
+    </section>
+    </head>
+
+    <main class="thankyou-page">
+        <h1>🎉 Thank You for Concating Us</h1>
+        <p>We have received your submission. We will contact you soon, below is a summary of the information you
+            provided:</p>
+
+        <section class="thankyou-info" id="submitted-data">
+            <!-- Form data will be displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>Guatemala Explorer</strong><br>
+                    10 Rue De La Paix<br>
+                    Guatemala City, GT 01010<br>
+                    info@guatemalacc.org<br>
+                    (502) 555-2300</p>
+            </div>
+
+            <div class="footer-section social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-section credits">
+                <p>WDD231 Class Project<br>
+                    Jose Chanax<br>
+                    © <span id="year"></span> Guatemala Explorer<br>
+                    Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

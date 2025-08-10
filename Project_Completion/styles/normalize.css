@@ -1,0 +1,377 @@
+/* === Base Styles === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    max-width: 1200px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #0B8FCE;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === Header === */
+header {
+    background-color: #2C5F2D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    position: relative;
+}
+
+.branding {
+    order: 2;
+    /* Logo on the right */
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: white;
+    font-weight: 600;
+}
+
+.navigation a.active,
+.navigation a:hover {
+    color: #0B8FCE;
+}
+
+/* Hamburger button hidden by default on large view */
+#menu {
+    display: none;
+}
+
+/* === Hero Section === */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center in hero */
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Left align text */
+}
+
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    max-width: 500px;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    color: #0B8FCE;
+    font-size: 2.2rem;
+}
+
+.keynote-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    padding: 0.7rem 1.5rem;
+    background-color: #2C5F2D;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.keynote-btn:hover {
+    background-color: #0B8FCE;
+}
+
+/* === Main Section === */
+main {
+    padding: 2rem;
+}
+
+main h1 {
+    color: #2C5F2D;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Spotlight Cards */
+.spotlights .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.spotlights .grid>div {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+/* === Footer === */
+footer {
+    background-color: #2C5F2D;
+    color: white;
+    padding: 1.5rem 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section.social img {
+    width: 28px;
+    margin: 0 0.4rem;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.footer-section.social img:hover {
+    transform: scale(1.1);
+}
+
+/* FORM */
+
+.contact-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #222;
+}
+
+.contact-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1 1 400px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.6rem 1rem;
+    border: 1px solid #2c5f2d;
+    /* Forest Green */
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0b8fce;
+    /* Sky Blue */
+    outline: none;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    background-color: #0b8fce;
+    color: #f9f9f9;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    background-color: #2c5f2d;
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    max-width: 350px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #222;
+}
+
+.contact-info h2 {
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+}
+
+/* DESTINATIONS */
+.destinations-hero {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #2c5f2d;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.destinations-list {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.destination-card:hover {
+    transform: scale(1.03);
+}
+
+.destination-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.card-content h2 {
+    color: #2c5f2d;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    margin: 0.3rem 0;
+    color: #222;
+    font-size: 0.95rem;
+}
+
+.card-content .tags {
+    font-style: italic;
+    color: #0b8fce;
+}
+
+#trip-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#destination-details,
+#weather-info {
+    flex: 1 1 300px;
+}
+
+.trip-planner-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.trip-planner-page h2,
+.trip-planner-page h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.trip-planner-page select,
+.trip-planner-page input[type="date"],
+.trip-planner-page button {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.trip-planner-page .date-range {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trip-planner-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trip-planner-page ul li {
+    background: white;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}

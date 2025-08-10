@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "name": "Antigua",
+        "location": "Sacatepéquez",
+        "description": "Colonial city with cobblestone streets and volcano views.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/antigua.webp",
+        "tags": [
+            "city",
+            "cultural"
+        ],
+        "lat": 14.5584,
+        "lon": -90.7333
+    },
+    {
+        "id": 2,
+        "name": "Lake Atitlán",
+        "location": "Sololá",
+        "description": "Stunning lake surrounded by volcanoes and indigenous villages.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/atitlan.webp",
+        "tags": [
+            "nature",
+            "relax"
+        ],
+        "lat": 14.6668,
+        "lon": -91.1880
+    },
+    {
+        "id": 3,
+        "name": "Tikal",
+        "location": "Petén",
+        "description": "Ancient Maya ruins set in the rainforest.",
+        "best_time": "Nov-Feb",
+        "difficulty": "Moderate",
+        "image": "images/tikal.webp",
+        "tags": [
+            "archaeology",
+            "adventure"
+        ],
+        "lat": 17.2220,
+        "lon": -89.6237
+    },
+    {
+        "id": 4,
+        "name": "Semuc Champey",
+        "location": "Alta Verapaz",
+        "description": "Limestone pools and jungle scenery — a hidden gem.",
+        "best_time": "Dec-Apr",
+        "difficulty": "Moderate",
+        "image": "images/semuc.webp",
+        "tags": [
+            "nature",
+            "adventure"
+        ],
+        "lat": 15.3358,
+        "lon": -89.9563
+    },
+    {
+        "id": 5,
+        "name": "Chichicastenango",
+        "location": "El Quiché",
+        "description": "Famous market town with vibrant textiles and traditions.",
+        "best_time": "All year",
+        "difficulty": "Easy",
+        "image": "images/chichi.webp",
+        "tags": [
+            "market",
+            "cultural"
+        ],
+        "lat": 14.8417,
+        "lon": -91.1278
+    },
+    {
+        "id": 6,
+        "name": "Quetzaltenango (Xela)",
+        "location": "Quetzaltenango",
+        "description": "Highland city with markets and nearby hikes.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/xela.webp",
+        "tags": [
+            "city",
+            "culture"
+        ],
+        "lat": 14.8349,
+        "lon": -91.5181
+    },
+    {
+        "id": 7,
+        "name": "Pacaya Volcano",
+        "location": "Escuintla",
+        "description": "Active volcano accessible for day hikes.",
+        "best_time": "Dec-Apr",
+        "difficulty": "Hard",
+        "image": "images/pacaya.webp",
+        "tags": [
+            "adventure",
+            "hike"
+        ],
+        "lat": 14.3816,
+        "lon": -90.6014
+    },
+    {
+        "id": 8,
+        "name": "Río Dulce",
+        "location": "Izabal",
+        "description": "River, canyon, and Caribbean access with wildlife.",
+        "best_time": "Nov-May",
+        "difficulty": "Easy",
+        "image": "images/riodulce.webp",
+        "tags": [
+            "nature",
+            "boat"
+        ],
+        "lat": 15.5302,
+        "lon": -88.5849
+    },
+    {
+        "id": 9,
+        "name": "Livingston",
+        "location": "Izabal",
+        "description": "Garífuna culture and Caribbean vibe reachable by boat.",
+        "best_time": "Nov-May",
+        "difficulty": "Easy",
+        "image": "images/livingston.webp",
+        "tags": [
+            "beach",
+            "culture"
+        ],
+        "lat": 15.8658,
+        "lon": -88.7557
+    },
+    {
+        "id": 10,
+        "name": "Iximché",
+        "location": "Chimaltenango",
+        "description": "Maya archaeological site with panoramic views.",
+        "best_time": "Nov-Mar",
+        "difficulty": "Easy",
+        "image": "images/iximche.webp",
+        "tags": [
+            "archaeology",
+            "history"
+        ],
+        "lat": 14.8221,
+        "lon": -90.6536
+    },
+    {
+        "id": 11,
+        "name": "Monterrico",
+        "location": "Escuintla",
+        "description": "Black-sand beaches and sea turtle sightings.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/monterrico.webp",
+        "tags": [
+            "beach",
+            "wildlife"
+        ],
+        "lat": 13.4889,
+        "lon": -90.8228
+    },
+    {
+        "id": 12,
+        "name": "Coban",
+        "location": "Alta Verapaz",
+        "description": "Cool highland city with coffee farms and cloud forests.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/coban.webp",
+        "tags": [
+            "nature",
+            "culture"
+        ],
+        "lat": 15.4719,
+        "lon": -90.3798
+    },
+    {
+        "id": 13,
+        "name": "Flores",
+        "location": "Petén",
+        "description": "Charming island town on Lake Petén Itzá.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/flores.webp",
+        "tags": [
+            "city",
+            "lake"
+        ],
+        "lat": 16.9260,
+        "lon": -89.8837
+    },
+    {
+        "id": 14,
+        "name": "Zunil",
+        "location": "Quetzaltenango",
+        "description": "Traditional town with hot springs and local markets.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/zunil.webp",
+        "tags": [
+            "culture",
+            "hot springs"
+        ],
+        "lat": 14.9830,
+        "lon": -91.5470
+    },
+    {
+        "id": 15,
+        "name": "Santiago Atitlán",
+        "location": "Sololá",
+        "description": "Indigenous town with rich traditions and lake views.",
+        "best_time": "Nov-Apr",
+        "difficulty": "Easy",
+        "image": "images/santiago.webp",
+        "tags": [
+            "culture",
+            "lake"
+        ],
+        "lat": 14.6534,
+        "lon": -91.1764
+    }
+]

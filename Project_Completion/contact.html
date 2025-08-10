@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Guatemala Explorer">
+    <meta name="author" content="Jose Chanax">
+    <title>WDD 231 - Guatemala Explorer - Contact - Jose Chanax</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Scripts -->
+    <script src="js/contact.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guatemala Explorer">
+    <meta property="og:description" content="Discover the beauty and culture of Guatemala with our travel guide.">
+    <meta property="og:image" content="https://Joka7w7.github.io/wdd231/Project_Completion/images/logo.png">
+    <meta property="og:url" content="https://Joka7w7.github.io/wdd231/Project_Completion/contact.html">
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Guatemala Explorer Logo" class="logo">
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="trip-planner.html">Trip Planner</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.webp" alt="Contact Us" class="hero-img">
+        <button class="keynote-btn" onclick="window.location.href='trip-planner.html'">Plan Your Trip</button>
+        <div class="hero-text">
+            <h1>Get in Touch</h1>
+            <p>We’d love to hear from you. Send us a message and we’ll get back to you soon.</p>
+        </div>
+    </section>
+
+    <main class="contact-main">
+        <section class="contact-section">
+            <form class="contact-form" action="thankyou.html" method="get" id="contactForm">
+                <h2>Contact Us</h2>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="tel">Phone</label>
+                <input id="tel" name="phone" type="number" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <aside class="contact-info">
+                <h2>Our Office</h2>
+                <p>123 Main St, City, Country</p>
+                <p>Email: info@guatemalaexplorer.com</p>
+                <p>Phone: (502) 555-2300</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p>
+                    <strong>Guatemala Explorer</strong><br>
+                    Guatemala City, Guatemala<br>
+                    info@guatemalaexplorer.com<br>
+                    (502) 555-2300
+                </p>
+            </div>
+            <div class="footer-section social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-section credits">
+                <p>
+                    WDD231 Final Project<br>
+                    Jose Chanax<br>
+                    © <span id="year"></span> Guatemala Explorer<br>
+                    Last Modified: <span id="lastModified"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
